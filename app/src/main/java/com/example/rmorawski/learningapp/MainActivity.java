@@ -17,6 +17,7 @@ import android.widget.Toast;
 import com.example.rmorawski.learningapp.activity.FragmentDrawer;
 import com.example.rmorawski.learningapp.activity.FragmentFriends;
 import com.example.rmorawski.learningapp.activity.FragmentHome;
+import com.example.rmorawski.learningapp.activity.FragmentLogin;
 import com.example.rmorawski.learningapp.activity.FragmentMessages;
 
 import butterknife.BindView;
@@ -109,6 +110,10 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
             case 2:
                 fragment = new FragmentMessages();
                 title = getString(R.string.title_messages);
+                break;
+            case 3:
+                fragment = new FragmentLogin();
+                title = getString(R.string.app_name);
                 break;
             default:
                 break;
